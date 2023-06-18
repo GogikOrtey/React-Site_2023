@@ -21,25 +21,48 @@ html {
   background-color: rgb(233, 233, 233);
 }
 
+body {
+  overflow-x: hidden;
+}
+
 /* Header */
 
 .header {
-  background-color: rgb(55, 108, 255);
-  height: 70px;
+  /*background-color: rgb(196, 211, 255);*/
+
+  background-image: url('fone_02.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  width: 95%;
+  height: 100px;
+
+  /*height: 70px;*/
+  height: 8vw;
   width: 100% - 20px;
   padding: 10px;
 }
 
 .span_01 {
   margin: 10px;
+  color: black;
+  font-size: 20px;
+}
+
+.span_01:hover {
   color: white;
+}
+
+.span_01:active {
+  color: rgb(67, 67, 255);
 }
 
 /* 4й блок - форма для заполнения */
 
 .B_4_div {
   background-color: rgb(255, 255, 255);
-  border-radius: 15px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 9px;
   height: auto;
   width: 650px;
   margin: auto;
@@ -105,6 +128,8 @@ div.rightEdge > p > input::selection {
   border-radius: 7px;
   width: 250px;
   border: 0px;
+  font-size: large;
+  font-style: italic;
 }
 
 .complButt:hover {
@@ -120,11 +145,173 @@ div.rightEdge > p > input::selection {
   height: 20px;
 }
 
+/* Footer */
 
+.foot_div {
+  margin-top: 35px;
+  height: 100px;
+  width: 100%;
+  background-color: rgb(54, 54, 54);
+  text-align: center;
+}
 
+.foot_div > p {
+  padding-top: 35px;
+  font-size: large;
+  color: white;
+}
 
+.foot_div > p > a {
+  color: orange;
+}
 
+/* UndoHeader */
 
+.und_head > img {
+  width: 80%;
+}
+.und_head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text_block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-with-text {
+  /*border: solid red 1px;*/
+  background-image: url('el_01.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 100%;
+  max-height: 100%;
+  width: 60%;
+  height: 100px;
+  text-align: center;
+  margin: 20px auto;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+}
+
+@font-face {
+  font-family: 'Nautilus Pompilius';
+  src: local('Nautilus Pompilius'), local('NautilusPompilius'), url('font/nautiluspompilius.woff2') format('woff2'), url('font/nautiluspompilius.woff') format('woff'), url('font/nautiluspompilius.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+.image-with-text > p {
+  font-size: 40px;
+  margin-top: 35px;
+  font-family: 'Nautilus Pompilius';
+}
+
+/* Block 1 */
+
+.B_1_div {
+  width: 100%;
+  height: 500px;
+  background-image: url('fone_B_01.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+}
+
+.B_1_inside {
+  width: 50vw;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.445);
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+}
+
+@media screen and (min-width: 1500px) {
+  .B_1_div {
+    width: 1500px;
+    margin: 50px auto;
+    border-radius: 15px;
+  }
+  .B_1_inside {
+    width: 750px;
+  }
+}
+
+.B_1_inside > p {
+  padding: 0px 20px;
+  text-align: center;
+  font-size: x-large;
+  font-style: italic;
+  font-weight: 400;
+}
+
+/* ----- */
+
+.B_2_div {
+  background-image: url('fone_B_02.png');
+}
+
+.B_2_inside {
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.B_2_inside > p {
+  margin: 17px;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+/* ----- */
+
+.B_3_div {
+  background-image: url('fone_B_03.png');
+}
+
+.B_3_inside {
+  /*border: solid red 1px;*/
+  width: 45vw;
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0);
+  margin: 0px;
+  padding: 0px;
+}
+
+.B_3_inside > p {
+  font-size: 33px;
+}
+
+.B_3_div img, .rightEdg {
+  /*border: solid red 1px;*/
+  width: 170px;
+  margin: 0px;
+}
+
+#img_1 {
+  margin: 0px;
+  margin-bottom: 40px;
+  width: 160px;
+}
+
+#img_3 {
+  margin-left: 50px;
+  margin-top: 50px;
+  width: 180px;
+}
+
+#img_2 {
+  padding-right: 20px;
+  width: 220px;
+}
 
 
 

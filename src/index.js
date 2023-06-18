@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import { useEffect } from 'react';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -8,7 +9,12 @@ function Content() {
   return(
     <>
       <Head/>
+      <UndoHeader/>
+      <B_1/>
+      <B_2/>
+      <B_3/>
       <B_4/>
+      <Footer/>
     </>
   )
 }
@@ -36,15 +42,101 @@ function Head() {
   )
 }
 
+function Footer() {
+  return(
+    <>
+      <div className='foot_div'>
+        <p>Сайт создал: <a href="https://vk.com/gog.ortey">Gogik Ortey</a></p>
+      </div>
+    </>
+  );
+}
+
+function UndoHeader() {
+  return(
+    <>
+      <div class="image-with-text">
+        <p>Заказ цветов</p>
+      </div>
+    </>
+  );
+}
+
+function B_1() {
+  return (
+    <>
+      <div className='B_1_div'>
+        <div className='B_1_inside'>
+          <p>Пионы - </p>
+          <p>Завораживающая красота в 
+            природном исполнении!</p>
+        </div>
+      </div>
+    </>
+  );
+}
+
+function B_2() {
+  return (
+    <>
+      <div className='B_1_div B_2_div'>
+        <div className='B_1_inside B_2_inside'>
+          <p>Тюльпаны - </p>
+          <p>Красота, которая вдохновляет!</p>
+        </div>
+      </div>
+    </>
+  );
+}
+
+function B_3() {
+  useEffect(() => {
+    function parallax() {
+      const scrollPosition = window.pageYOffset;
+
+      const img1 = document.getElementById("img_1");
+      const img2 = document.getElementById("img_2");
+      const img3 = document.getElementById("img_3");
+
+      img1.style.transform = `translateY(-${scrollPosition * 0.19 - 250}px)`;
+      img2.style.transform = `translateY(-${scrollPosition * 0.2 - 250}px)`;
+      img3.style.transform = `translateY(-${scrollPosition * 0.25 - 250}px)`;
+    }
+
+    window.addEventListener("scroll", parallax);
+    return () => window.removeEventListener("scroll", parallax);
+  }, []);
+
+  return (
+    <>
+      <div className='B_1_div B_3_div'>
+        <img id='img_2' src="item_02.png" />
+        <div className='B_1_inside B_2_inside B_3_inside'>
+          <p>Цветы -</p>
+          <p>Самый лучший подарок!</p>
+        </div>
+        <div className='rightEdg'>
+          <img id='img_1' src="item_01.png" />
+          <img id='img_3' src="item_03.png" />
+        </div>
+      </div>
+    </>
+  );
+}
+
+
 function B_4() {
   return (
-    <div className='B_4_div'>
-      <div className='inside_01'>
-        <p className='title_p'>Хотите заказать цветы прямо сейчас?</p>
-        <p className='title_p'>Запоните анкету, и мы привезём их в течении часа!</p>
-        <RenderInputElAndButton/>
+    <div className='B_1_div'>
+      <div className='B_4_div'>
+        <div className='inside_01'>
+          <p className='title_p'>Хотите заказать цветы прямо сейчас?</p>
+          <p className='title_p'>Запоните анкету, и мы привезём их в течении часа!</p>
+          <RenderInputElAndButton/>
+        </div>
       </div>
     </div>
+
   )
 }
 
@@ -215,11 +307,3 @@ function RenderInputElAndButton() {
 
 
 
-
-function block123() { // ????????
-  return(
-    <div>
-      <span>1234</span>
-    </div>
-  )
-}
