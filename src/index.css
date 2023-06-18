@@ -1,0 +1,259 @@
+
+/* Стандарные стили */
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Общие стили для страницы */
+
+html {
+  background-color: rgb(233, 233, 233);
+}
+
+/* Header */
+
+.header {
+  background-color: rgb(55, 108, 255);
+  height: 70px;
+  width: 100% - 20px;
+  padding: 10px;
+}
+
+.span_01 {
+  margin: 10px;
+  color: white;
+}
+
+/* 4й блок - форма для заполнения */
+
+.B_4_div {
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  height: auto;
+  width: 650px;
+  margin: auto;
+  margin-top: 35px;
+  padding: 20px;
+}
+
+.inside_01 {
+  padding: 15px;
+  padding-top: 0px;
+}
+
+.title_p {
+  text-align: center;
+  font-size: x-large;
+  font-style: italic;
+  font-weight: 400;
+  padding: 0px;
+  margin: 7px;
+}
+
+.container {
+  /*border: solid red 1px;*/
+  display: grid;
+  grid-template-columns: 0.85fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+}
+
+.leftEdge{
+  /*border: solid red 1px;*/
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+}
+
+.rightEdge{
+  /*border: solid red 1px;*/
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+}
+
+div.rightEdge > p > input {
+  width: 95%;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 600;
+}
+
+div.rightEdge > p > input::selection {
+  color: orange;
+}
+
+.errText {
+  text-align: center;
+  padding-top: 15px;
+}
+
+.complButt {
+  display: block;
+  background-color: rgb(55, 108, 255);
+  padding: 10px;
+  margin: 10px auto 0;
+  border-radius: 7px;
+  width: 250px;
+  border: 0px;
+}
+
+.complButt:hover {
+  background-color: orange;
+}
+
+.complButt:active {
+  background-color: white;
+  border: dashed black 2px;
+}
+
+.floop_01 {
+  height: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+h2, p, button {
+  color: white;
+  background-color: rgb(0, 22, 37);  
+}
+
+html {
+  background-color: rgb(0, 22, 37);
+}
+
+h2, p, button ,input {
+  margin-left: 35px;
+}
+
+button {margin-left: 15px;}
+
+.center {
+  margin: auto;
+  width: 500px;
+  text-align: center;
+}
+
+input, button {
+  border-radius: 5px;
+  padding: 7px;
+}
+*/
+
+/*
+body {
+  background: url("back_1.png") no-repeat black;
+  background-position: top right;
+  text-align: center;
+  color: white;
+}
+
+.head {
+  display: grid;
+  grid-template-columns: 1fr 1fr 3fr;
+  align-items: center;
+  column-gap: 0.5vw;
+}
+
+.head img{
+  width: 100%;
+}
+ 
+h1 {
+  font-size: 4vw;
+}
+
+.button {
+  border: 0;
+  border-radius: 5px;
+  background: #4676D7;
+  color: #ffffff;
+  padding: 8px 16px;
+  font-size: 2vw;
+  cursor: pointer;
+  font-weight:bold;
+}
+
+.button:hover {
+  background: #1d49aa;
+}
+
+.button:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px #cbd6ee;
+}
+
+.prof{
+  width: 30%;
+  margin: auto;
+}
+
+.prof ul {
+  padding: 0;
+  font-size: 1.5vw;
+}
+
+.prof li {
+  display: grid;
+  grid-template-columns: 6fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+  border-top: solid white 0.15vw;
+  padding: 0.5vw;
+  list-style-type: none;
+  cursor: pointer;
+}
+ 
+span.left {
+  text-align: left;
+}
+
+span.right {
+  text-align: right;
+  font-size: 2.5vw;
+}
+
+.prof h2 {
+  color: #9d46d7;
+  font-size: xx-large;
+  text-align: center;
+}
+
+.prof li p {
+  color: #4676D7;
+  font-size: 1.2vw;
+  text-align: left;
+}
+
+*/
